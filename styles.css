@@ -1,0 +1,109 @@
+body{
+    background-color: #020312;
+    color: white;
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: #eb4a4a;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2{
+    font-size: 3.5rem;
+}
+.contact-text p{
+    color: gray;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li a{
+    display: block;
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+}
+.contact-icons i{
+    height: 40px;
+    width: 40px;
+    background: #12141c;
+    border-radius: 0.5rem;
+    color: #eb4a4a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: all .40s ease;
+}
+.contact-icons i:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #fff;
+    background: #eb4a4a;
+}
+.contact-from{
+    position: relative;
+}
+.contact-from form input,form textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 18px;
+    background: #12141c;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-from textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-from form .send{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    background: #eb4a4a;
+    color: #fff;
+    width: 190px;
+    transition: all .40s ease;
+    cursor: pointer;
+}
+.last-text p{
+    text-align: center;
+    padding: 15px;
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i{
+    color: #fff;
+    background: #eb4a4a;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
