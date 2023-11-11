@@ -1,157 +1,76 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-style: 'Quicksand' , sans-serif;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-}
-header{
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 22px 16%;
-    border-bottom: 1px solid transparent;
-    transition: all .40 ease;
-}
-.navbar{
-    display: flex;
-}
-.navbar a{
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 10px 25px;
-    margin: 0 2px;
-    border-radius:  0.5rem;
-    transition: all .40s ease;
+
+
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Additional CSS properties for styling */
 }
 
-.navbar a:hover{
-    background: red;
-    color: white;
-}
-#menu-icon{
-    font-size: 36px;
-    color: white;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
-}
-
-body{
-    background-color: #020312;
-    color: white;
-}
-.contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 3rem;
-}
-.contact-text h4{
-    margin: 15px 0;
-    color: #eb4a4a;
-    font-size: 20px;
-    font-weight: 600;
-}
-.contact-text h2{
-    font-size: 3.5rem;
-}
-.contact-text p{
-    color: gray;
-    font-size: 1.1rem;
-    line-height: 30px;
-    margin-bottom: 2rem;
-}
-.contact-list{
-    margin-bottom: 3rem;
-}
-.contact-list li{
-    margin-bottom: 10px;
-    display: block;
-}
-.contact-list li a{
-    display: block;
-    color: gray;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: all .40s ease;
-}
-.contact-list li a:hover{
-    transform: scale(1.01) translateY(-5px);
-}
-.contact-icons i{
-    height: 40px;
-    width: 40px;
-    background: #12141c;
-    border-radius: 0.5rem;
-    color: #eb4a4a;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin-right: 10px;
-    transition: all .40s ease;
-}
-.contact-icons i:hover{
-    transform: scale(1.01) translateY(-5px);
+header {
+    background-color: #333;
     color: #fff;
-    background: #eb4a4a;
-}
-.contact-from{
-    position: relative;
-}
-.contact-from form input,form textarea{
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 18px;
-    background: #12141c;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-}
-.contact-from textarea{
-    resize: none;
-    height: 220px;
-}
-.contact-from form .send{
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 500;
-    background: #eb4a4a;
-    color: #fff;
-    width: 190px;
-    transition: all .40s ease;
-    cursor: pointer;
-}
-.last-text p{
-    text-align: center;
-    padding: 15px;
-    color: gray;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.top{
-    position: fixed;
-    bottom: 2.1rem;
-    right: 2.1rem;
-}
-.top i{
-    color: #fff;
-    background: #eb4a4a;
-    font-size: 20px;
     padding: 10px;
-    border-radius: 0.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    /* Hover effect */
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Home Page specific styles */
+.home-content {
+    display: flex;
+    /* Additional CSS properties for styling */
+}
+
+/* Products Page specific styles */
+.products-content {
+    display: grid;
+    /* Additional CSS properties for styling */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Additional styles for grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Polarograph styles */
+.polarograph {
+    /* Your polarograph styling */
+}
+
+/* Contact Page specific styles */
+.contact-content {
+    /* Additional CSS properties for styling */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
